@@ -23,7 +23,7 @@
     <div class="container mx-auto my-2 my-sm-3 my-lg-4 p-3">
         <div class="row">
            <div class="col"></div>
-           <div class="col-10">
+           <div class="col-6">
                <a href="${pageContext.request.contextPath}/products" class="btn btn-primary" role="button">Back</a>
                <img class="card-img-top" src="<c:url value="img/${product.getImg()}"></c:url>" class="img-fluid"/>
                <table class="table table-hover">

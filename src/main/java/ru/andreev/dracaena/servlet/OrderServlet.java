@@ -52,9 +52,9 @@ public class OrderServlet extends HttpServlet {
             customer.setAddress(req.getParameter("address"));
 
             order.setStatus(Status.CHECKOUT);
-
             customerService.update(customer);
             orderService.update(order);
+            req.getRequestDispatcher("checkout.jsp").forward(req,resp);
         }
         resp.sendRedirect(req.getRequestURI());
     }
